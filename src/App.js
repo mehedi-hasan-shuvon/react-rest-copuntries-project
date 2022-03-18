@@ -1,18 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
+import Country from './components/Country/Country';
+import Person from './components/Person/Person';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
-      <LoadCountires></LoadCountires>
+      {/* <LoadCountires></LoadCountires> */}
+      <Header></Header>
+      <Country></Country>
+      <Person></Person>
+
+
     </div>
   );
 }
 
 
 
-function LoadCountires() {
+/* function LoadCountires() {
   const [countries, SetCountries] = useState([]);
 
   useEffect(() => {
@@ -43,6 +51,6 @@ function Country(props) {
       <p style={{"color":"red"}}>Population:{props.population}</p>
     </div>
   );
-}
+} */
 
 export default App;
