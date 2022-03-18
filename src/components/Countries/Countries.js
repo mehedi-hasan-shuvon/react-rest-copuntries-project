@@ -24,6 +24,7 @@ const Countries = () => {
                         area={country.area}
                         region={country.region}
                         country={country}
+                        key={country.cca3}
                     ></Country>)
                 }
             </div>
