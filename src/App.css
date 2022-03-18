@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.country-div{
+  background-color: antiquewhite;
+  padding: 20px;
+  margin:20px;
+  border: 2px solid blueviolet;
+  border-radius: 20px;
+  box-shadow: -4px -3px 45px 21px rgba(0,0,0,0.35);
+}
