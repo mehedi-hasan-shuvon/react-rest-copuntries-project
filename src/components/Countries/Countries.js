@@ -15,15 +15,19 @@ const Countries = () => {
         <div >
             <h1>Hello from Countries: {countries.length}</h1>
             <div className='countries-div'>
-            {
-                countries.map(country => <Country name={country.name.common} capital={country.capital}
-                population={country.population}
-                flag={country.flags.png}
-                area={country.area}
-                ></Country>)
-            }
+                {
+                    countries.map(country => <Country
+                        name={country.name.common}
+                        capital={country.capital}
+                        population={country.population}
+                        flag={country.flags.png}
+                        area={country.area}
+                        region={country.region}
+                        country={country}
+                    ></Country>)
+                }
             </div>
-            
+
 
         </div>
     );
